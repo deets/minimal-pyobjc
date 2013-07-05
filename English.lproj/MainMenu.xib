@@ -12,6 +12,8 @@
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<string>NSButton</string>
+			<string>NSButtonCell</string>
 			<string>NSCustomObject</string>
 			<string>NSCustomView</string>
 			<string>NSMenu</string>
@@ -1304,21 +1306,49 @@
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSCustomView" id="429901430">
+						<object class="NSCustomView" id="994857675">
 							<reference key="NSNextResponder" ref="414427165"/>
 							<int key="NSvFlags">274</int>
 							<string key="NSFrame">{{0, 71}, {710, 587}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
+							<reference key="NSNextKeyView" ref="1019536779"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSClassName">ApplicationView</string>
+						</object>
+						<object class="NSButton" id="1019536779">
+							<reference key="NSNextResponder" ref="414427165"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{14, 12}, {119, 32}}</string>
+							<reference key="NSSuperview" ref="414427165"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="849579971">
+								<int key="NSCellFlags">67108864</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents">Rotate Color</string>
+								<object class="NSFont" key="NSSupport">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">13</double>
+									<int key="NSfFlags">1044</int>
+								</object>
+								<string key="NSCellIdentifier">_NS:9</string>
+								<reference key="NSControlView" ref="1019536779"/>
+								<int key="NSButtonFlags">-2038284288</int>
+								<int key="NSButtonFlags2">129</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
+							</object>
 						</object>
 					</object>
 					<string key="NSFrameSize">{710, 658}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
-					<reference key="NSNextKeyView" ref="429901430"/>
+					<reference key="NSNextKeyView" ref="994857675"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{300, 322}</string>
@@ -1996,6 +2026,22 @@
 					</object>
 					<int key="connectionID">424</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">view</string>
+						<reference key="source" ref="322582222"/>
+						<reference key="destination" ref="994857675"/>
+					</object>
+					<int key="connectionID">1028</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">rotateColor:</string>
+						<reference key="source" ref="322582222"/>
+						<reference key="destination" ref="1019536779"/>
+					</object>
+					<int key="connectionID">1031</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -2342,7 +2388,8 @@
 						<reference key="object" ref="414427165"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="429901430"/>
+							<reference ref="994857675"/>
+							<reference ref="1019536779"/>
 						</object>
 						<reference key="parent" ref="513744381"/>
 					</object>
@@ -3052,8 +3099,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1027</int>
-						<reference key="object" ref="429901430"/>
+						<reference key="object" ref="994857675"/>
 						<reference key="parent" ref="414427165"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1029</int>
+						<reference key="object" ref="1019536779"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="849579971"/>
+						</object>
+						<reference key="parent" ref="414427165"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1030</int>
+						<reference key="object" ref="849579971"/>
+						<reference key="parent" ref="1019536779"/>
 					</object>
 				</object>
 			</object>
@@ -3065,7 +3126,9 @@
 					<string>-2.IBPluginDependency</string>
 					<string>-3.IBPluginDependency</string>
 					<string>1027.IBPluginDependency</string>
+					<string>1029.IBPluginDependency</string>
 					<string>103.IBPluginDependency</string>
+					<string>1030.IBPluginDependency</string>
 					<string>106.IBPluginDependency</string>
 					<string>111.IBPluginDependency</string>
 					<string>112.IBPluginDependency</string>
@@ -3252,6 +3315,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{271, 245}, {551, 625}}</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3390,7 +3455,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1027</int>
+			<int key="maxID">1031</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3398,6 +3463,28 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ApplicationDelegate</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">rotateColor:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">rotateColor:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">rotateColor:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">view</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">view</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">view</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/ApplicationDelegate.h</string>
