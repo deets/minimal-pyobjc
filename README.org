@@ -1,0 +1,5 @@
+* Minimal PyObjc Project
+
+This simple project serves as template for creation of PyObjc applications.
+
+Check out the branches for additional examples.
