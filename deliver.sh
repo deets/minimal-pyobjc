@@ -10,4 +10,5 @@ $PYTHON setup.py py2app
 if [ -e $NAME.dmg ]; then
     rm $NAME.dmg
 fi
+
 hdiutil create -volname $NAME -srcdir dist $NAME.dmg
